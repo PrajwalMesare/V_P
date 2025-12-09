@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Vaiduu ❤️</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="particles-js"></div>
+
+    <div class="container">
+
+        <!-- STEP 1 -->
+        <div class="step active" id="step1">
+            <h1>Hey Vaiduu ❤️</h1>
+            <p>Are you ready for something special?</p>
+            <button class="btn" onclick="nextStep(2)">Yes, Show Me!</button>
+        </div>
+
+        <!-- STEP 2 -->
+        <div class="step" id="step2">
+            <h2>Just for You, Vaiduu 💖</h2>
+            <div class="heart" onclick="nextStep(3)"></div>
+            <p>Tap the heart...</p>
+        </div>
+
+        <!-- STEP 3 -->
+        <div class="step" id="step3">
+            <h2>Beautiful Memories with You ❤️</h2>
+
+            <div class="photo-frame">
+                <img src="your-photo.jpg" alt="Photo">
+            </div>
+
+            <button class="btn" onclick="nextStep(4)">Next</button>
+        </div>
+
+        <!-- STEP 4 -->
+        <div class="step" id="step4">
+            <h2>A Message for You, Vaiduu 💌</h2>
+
+            <div class="message-box" id="messageBox">
+                <p id="typedMessage"></p>
+            </div>
+
+            <button class="btn" onclick="nextStep(5)">Continue</button>
+        </div>
+
+        <!-- STEP 5 (FINAL) -->
+        <div class="step" id="step5">
+            <h2>Happy Birthday, Vaiduu 🎉💗</h2>
+
+            <p>You mean so much to me.  
+            I hope this little surprise made you smile.</p>
+
+            <div class="signature">— With Love, Prajwal 💞</div>
+        </div>
+
+    </div>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+</html>
