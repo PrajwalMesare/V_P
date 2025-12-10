@@ -2,7 +2,12 @@
 // Initialize variables
 let currentStep = 1;
 const totalSteps = 6;
-let userName = "Vaiduu";
+let userName = "Vaiduu";  // Fixed name
+
+function goToStep(stepNumber) {
+    document.querySelectorAll('.step').forEach(step => step.classList.remove('active'));
+    document.getElementById(`step${stepNumber}`).classList.add('active');
+}
 
 
 // Initialize particles.js
