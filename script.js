@@ -1,29 +1,16 @@
-// Auto 10-second Countdown Before Step 1
-let countdown = 10;
+let count = 10;
+const countdownEl = document.getElementById("countdown-number");
 
-function startCountdown() {
-    const numberElem = document.getElementById("countdownNumber");
+const countdownTimer = setInterval(() => {
+    count--;
+    countdownEl.textContent = count;
 
-    const timer = setInterval(() => {
-        countdown--;
-        numberElem.textContent = countdown;
-
-        if (countdown <= 0) {
-            clearInterval(timer);
-            goToStep1();
-        }
-    }, 1000);
-}
-
-// Show Step 1 after countdown
-function goToStep1() {
-    document.getElementById("countdownStep").classList.remove("active");
-    document.getElementById("step1").classList.add("active");
-}
-
-// Start countdown on page load
-window.onload = startCountdown;
-
+    if (count === 0) {
+        clearInterval(countdownTimer);
+        document.getElementById("step0").style.display = "none";
+        document.getElementById("step1").style.display = "block";
+    }
+}, 1000);
 
 // Initialize variables
 let currentStep = 1;
@@ -541,7 +528,4 @@ function shareOnSocial(platform) {
         repeat: 1
     });
 }
-
-window.onload = () => {
-    startCountdown();
 };
