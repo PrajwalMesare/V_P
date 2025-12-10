@@ -467,6 +467,42 @@ p {
         opacity: 0;
     }
 }
+/* Countdown Slide Style */
+#step0 h1 {
+    font-size: 32px;
+    color: #d81b60;
+    animation: fadeIn 1s ease-in-out;
+}
+
+#countdown-number {
+    font-size: 90px;
+    font-weight: 900;
+    color: #ff4081;
+    text-shadow: 0 0 10px rgba(255, 64, 129, 0.5),
+                 0 0 20px rgba(255, 64, 129, 0.3);
+    animation: pop 0.5s ease-in-out;
+}
+
+#step0 p {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #880e4f;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes pop {
+    0% { transform: scale(0.5); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
@@ -504,15 +540,5 @@ p {
         width: 150px;
         height: 150px;
     }
- #countdownStep h2 {
-    font-size: 2.3rem;
-    color: #d81b60;
-}
-
-#countdownNumber {
-    font-weight: bold;
-    color: #ff4081;
-    font-size: 2rem;
-}
 
 }
