@@ -1,19 +1,29 @@
-function startCountdown() {
-    const countdownElement = document.getElementById("countdownNumber");
-    let timeLeft = 10; // 10 seconds
+// Auto 10-second Countdown Before Step 1
+let countdown = 10;
 
-    countdownElement.textContent = timeLeft;
+function startCountdown() {
+    const numberElem = document.getElementById("countdownNumber");
 
     const timer = setInterval(() => {
-        timeLeft--;
-        countdownElement.textContent = timeLeft;
+        countdown--;
+        numberElem.textContent = countdown;
 
-        if (timeLeft <= 0) {
+        if (countdown <= 0) {
             clearInterval(timer);
-            nextStep(); // Auto go to next step
+            goToStep1();
         }
     }, 1000);
 }
+
+// Show Step 1 after countdown
+function goToStep1() {
+    document.getElementById("countdownStep").classList.remove("active");
+    document.getElementById("step1").classList.add("active");
+}
+
+// Start countdown on page load
+window.onload = startCountdown;
+
 
 // Initialize variables
 let currentStep = 1;
