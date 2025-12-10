@@ -30,18 +30,19 @@
             <img src="https://png.pngtree.com/png-vector/20250422/ourmid/pngtree-cute-girl-holding-birthday-cake-smiling-cheerfully-png-image_16067658.png" style="height: 200px;width: 200px;" alt="">
             <button class="btn" onclick="nextStep()">Open Your Gift</button>
         </div>
+<!-- Step 2: Fixed Name (No Input) -->
+<div class="step" id="step2">
+    <h2>Let's Make This Personal</h2>
+    <p>The most beautiful birthday girl in the world is...</p>
 
-        <!-- Step 2: Name Input -->
-        <div class="step" id="step2">
-            <h2>Let's Make This Personal</h2>
-            <p>What's the name of the most beautiful birthday girl in the world?</p>
-            <input type="text" class="name-input" id="nameInput" placeholder="Enter your name">
-            <button class="btn" onclick="saveName()">Continue</button>
-        </div>
+    <h1 style="font-size: 3rem; color: #d81b60; margin-top: 20px;">Vaiduu ❤️</h1>
+
+    <button class="btn" onclick="goToStep(3)">Continue</button>
+</div>
 
         <!-- Step 3: Heart Animation -->
         <div class="step" id="step3">
-            <h2>For You, <span id="displayName">My Love</span></h2>
+            <h2>For You, <span id=Vaiduu >My Love</span></h2>
             <p>Click on the heart to feel my love for you!</p>
             <div class="heart" id="interactiveHeart" onclick="createHearts()"></div>
             <div id="heartMessage" class="message-box">
