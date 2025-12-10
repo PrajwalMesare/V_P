@@ -1,3 +1,19 @@
+function startCountdown() {
+    const countdownElement = document.getElementById("countdownNumber");
+    let timeLeft = 10; // 10 seconds
+
+    countdownElement.textContent = timeLeft;
+
+    const timer = setInterval(() => {
+        timeLeft--;
+        countdownElement.textContent = timeLeft;
+
+        if (timeLeft <= 0) {
+            clearInterval(timer);
+            nextStep(); // Auto go to next step
+        }
+    }, 1000);
+}
 
 // Initialize variables
 let currentStep = 1;
