@@ -531,3 +531,7 @@ function shareOnSocial(platform) {
         repeat: 1
     });
 }
+
+window.onload = () => {
+    startCountdown();
+};
