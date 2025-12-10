@@ -1,16 +1,3 @@
-let count = 10;
-const countdownEl = document.getElementById("countdown-number");
-
-const countdownTimer = setInterval(() => {
-    count--;
-    countdownEl.textContent = count;
-
-    if (count === 0) {
-        clearInterval(countdownTimer);
-        document.getElementById("step0").style.display = "none";
-        document.getElementById("step1").style.display = "block";
-    }
-}, 1000);
 
 // Initialize variables
 let currentStep = 1;
