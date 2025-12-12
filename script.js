@@ -1,3 +1,8 @@
+function playMusic() {
+    const audio = document.getElementById("bgMusic");
+    audio.volume = 0.7;  // optional
+    audio.play();
+}
 
 // Initialize variables
 let currentStep = 1;
