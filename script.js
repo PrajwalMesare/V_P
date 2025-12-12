@@ -1,8 +1,8 @@
-function playMusic() {
-    const audio = document.getElementById("bgMusic");
-    audio.volume = 0.7;  // optional
-    audio.play();
-}
+document.addEventListener('click', () => {
+    const music = document.getElementById('bgMusic');
+    music.muted = false; // unmute
+    music.play();        // start playing
+}, { once: true }); // only trigger once
 
 // Initialize variables
 let currentStep = 1;
