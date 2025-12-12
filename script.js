@@ -348,14 +348,14 @@ function createPetals() {
 function typeMessage() {
     const messages = [
         `Dear ${userName},`,
-        "On your special day, I want you to know...",
+        "On your special day, I want you to know something from my heart...",
         "You are the most amazing person I've ever met.",
-        "Your smile brightens my darkest days.",
-        "Your laugh is my favorite sound in the world.",
-        "Your love gives me strength and happiness.",
-        "I'm so grateful to have you in my life.",
-        "May this year bring you all the joy you deserve.",
-        "You deserve the world and more.",
+        "Your smile brightens even my darkest days.",
+        "Your laugh is the sweetest sound in my world.",
+        "Your love gives me strength, peace, and endless happiness.",
+        "I’m truly grateful to have you in my life.",
+        "May this year bring you the joy your heart truly deserves.",
+        "You deserve the world and even more.",
         "Happy Birthday Bala ❤"
     ];
     
